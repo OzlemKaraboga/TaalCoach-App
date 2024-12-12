@@ -1,0 +1,112 @@
+.coach-homepage-search {
+  background-image: url("../../../public/photo/coach1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.greeting-coach {
+  color: #f6e2e2;
+  text-shadow:
+    1px 1px 1px #5e0967,
+    1px 2px 1px #9a26c1,
+    1px 3px 1px #e8dcee;
+  padding-top: 50px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-section-coach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-group-coach {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.button-group-coach button {
+  width: 200px;
+  background: linear-gradient(
+    90deg,
+    rgb(166, 51, 200) 0%,
+    rgb(100, 28, 101) 35%,
+    rgb(73, 7, 127) 100%
+  );
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #f6e2e2;
+}
+
+.search-filter-coach {
+  width: 250px;
+  background-color: #9c5be7;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filters-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.search-filter-coach {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hide-filter-button {
+  padding: 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hide-filter-button:hover {
+  background-color: #c9302c;
+}
+
+@media screen and (max-width: 768px) {
+  .button-group-coach,
+  .filter-search-group-coach {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .greeting-coach {
+    font-size: 1.2;
+  }
+}

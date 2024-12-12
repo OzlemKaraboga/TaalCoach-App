@@ -1,0 +1,110 @@
+/* General Styling for User Homepage */
+.user-homepage-search {
+  padding: 40px 20px;
+  background-image: url("../../../public/photo/learner1.webp");
+  background-size: cover;
+  text-align: center;
+}
+
+.greeting {
+  color: #f0e7e7;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.greeting h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* Search and Filter Section */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Button Group for Three Primary Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Button Styles */
+.button-group button {
+  width: 200px;
+  background: linear-gradient(
+    90deg,
+    rgb(166, 51, 200) 0%,
+    rgb(100, 28, 101) 35%,
+    rgb(73, 7, 127) 100%
+  );
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #f6e2e2;
+}
+
+.button-group .button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(52, 104, 207, 0.1);
+}
+
+.find-button:hover {
+  background-color: #d356de;
+}
+
+.book-button:hover {
+  background-color: #d356de;
+}
+
+.visit-profile:hover {
+  background-color: #d356de;
+}
+
+/* Search and Filter Buttons */
+.filter-search-group {
+  display: flex;
+  gap: 20px;
+}
+
+.search-coaches,
+.search-filter {
+  width: 200px;
+  background-color: #9c5be7;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex: 1;
+}
+
+.search-filter:hover {
+  background-color: #daeb3f;
+}
+
+.search-coaches:hover {
+  background-color: #daeb3f;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .button-group,
+  .filter-search-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 320px;
+  }
+}

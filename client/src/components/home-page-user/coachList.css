@@ -1,0 +1,68 @@
+.coaches-list {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.coach-card {
+  width: 100%;
+  max-width: 350px;
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.coach-card:hover {
+  transform: scale(1.02);
+}
+
+.coach-image {
+  height: 300px;
+  object-fit: cover;
+}
+
+.coach-content {
+  color: #6c757d;
+  height: 220px;
+  overflow: hidden;
+}
+
+.coach-actions {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+@media (max-width: 1024px) {
+  .coaches-list {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .coach-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coach-card {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coach-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .coaches-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

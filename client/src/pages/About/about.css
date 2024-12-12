@@ -1,0 +1,83 @@
+.about-section {
+  background: url("../../../public/photo/aboutus2.webp") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #361338;
+}
+
+/* Text content styling */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 35px;
+}
+
+.about-text {
+  position: relative;
+  max-width: 400px;
+  margin: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.about-text b {
+  color: #161f72;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Responsive Design for tablets */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 5px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    max-width: 550px;
+    margin-top: 25px;
+  }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 720px) {
+  .about-section {
+    height: auto;
+    padding: 5px;
+    background-size: contain;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    bottom: -20px;
+    width: 100%;
+    position: relative;
+    margin: 30px 10px;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    max-width: 80%;
+    margin: 15px;
+  }
+}

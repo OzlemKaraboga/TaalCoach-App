@@ -1,0 +1,89 @@
+.personal-info-card {
+  padding: 8px;
+  border-radius: 10px;
+  background: #d60909;
+}
+
+.personal-info-title {
+  font-weight: bold;
+}
+
+.personal-info-box {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.personal-info-data-box {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.personal-info-item {
+  width: 100%;
+  max-width: 150px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto; /* Center items */
+}
+
+.personal-info-value {
+  height: 45px;
+}
+
+.personal-info-text {
+  text-align: center;
+}
+
+.edit-save-button {
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .personal-info-box,
+  .personal-info-data-box {
+    max-width: 100%;
+  }
+
+  .personal-info-item {
+    max-width: 100%; /* Make sure items are full width */
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .personal-info-title {
+    font-size: 1rem;
+  }
+
+  .personal-info-box {
+    max-width: 100%;
+  }
+  .personal-info-data-box {
+    max-width: 100%;
+  }
+  .personal-info-item {
+    max-width: 100%;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .personal-info-title {
+    font-size: 0.9rem;
+  }
+
+  .personal-info-box,
+  .personal-info-data-box {
+    max-width: 100%;
+  }
+  .personal-info-item {
+    max-width: 100%;
+    height: 35px;
+  }
+}
