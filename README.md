@@ -1,12 +1,12 @@
-`TODO: Add a nice screenshot of the app!`
+![Taal Coach Screenshot](client/public/photo/Screenshot.png)  
 
-# Cohort XX final project
+# Cohort 48 Final Project
 
 This is the final project for the HackYourFuture curriculum we did as a cohort using the [MERN stack](https://www.mongodb.com/resources/languages/mern-stack) by following the agile methodology with our team and a group of mentors. A quick guide to what we built:
 
-> TODO: Add short description of the app
+> TaalCoach is a platform for finding Dutch language coaches designed for both learners and coaches. Users can sign up as either a student or a coach. Students can browse coach profiles, view ratings and reviews, choose a coach, and book sessions. Both coaches and students can edit session details, providing flexibility and convenience. The platform allows students to rate coaches and leave feedback, encouraging personalized learning experiences and making it easy to find the perfect match for language development.
 
-`[Click here for the Demo version](TODO: add link)`
+[Click here for the Demo version](https://c48-group-a-713269d45048.herokuapp.com/)
 
 ## 1. Setup
 
@@ -30,24 +30,13 @@ To run the app in dev mode you can run the following command in the main directo
 client
 ├── public
 └── src
-|   └── __tests__
-|   └── __testUtils__
 |   └── components
 |   └── hooks
 |   └── pages
-|       └── __tests__
-|       └── components
 |   └── util
 |   index.jsx
-cypress
-|   └── fixtures
-|   └── integration
-|   └── plugins
-|   └── support
 server
 └── src
-    └── __tests__
-    └── __testUtils__
     └── controllers
     └── db
     └── models
@@ -59,8 +48,6 @@ server
 ### 2.1 Client structure
 
 - `public` || public facing client code
-- `__tests__` || any `jest` tests for specific components will be in a `__tests__` folder on the same level
-- `__testUtils__` || any code that is only being used in the tests is put in the `__testUtils__` folder to separate that away from the rest of the code
 - `components` || all of our shared components that are used over multiple pages
 - `hooks` || all of our custom hooks
 - `pages` || the page components of our app, any routing will go between these components
@@ -68,17 +55,8 @@ server
 - `util` || any utility functions that can be used anywhere on the client side
 - `index.jsx` || the start point of the client
 
-### 2.2 Cypress structure
+### 2.2 Server structure
 
-- `fixtures` || any data/files that `cypress` needs can be placed here
-- `integration` || all of our tests are in here, separated in folders based on the pages in our app
-- `plugins` || any plugins for our `cypress` configuration can be placed here
-- `support` || custom commands and other support files for `cypress` can be placed here
-
-### 2.3 Server structure
-
-- `__tests__` || any `jest` tests for the api endpoints as that is our testing strategy for the backend
-- `__testUtils__` || any code that is only being used in the tests is put in the `__testUtils__` folder to separate that away from the rest of the code
 - `controllers` || all of our controller functions that interact with the database
 - `db` || all of our configuration for the database
 - `models` || all of our `mongoose` models will be placed here
@@ -100,19 +78,3 @@ The base stack of the app is a MERN stack (Mongoose, Express, React, Node). Next
 - `concurrently` || To run commands in parallel. See [docs](https://github.com/open-cli-tools/concurrently#readme)
 
 For more information on how these work together including the automatic deployment to heroku, have a look at our detailed [DEV](./DEV.md) file.
-
-### 3.2 Client-side libraries
-
-- `@testing-library/*` || We use React Testing Library to write all of our tests. See [docs](https://testing-library.com/docs/react-testing-library/intro/)
-- `jest` || To run our tests and coverage. See [docs](https://jestjs.io/)
-- `jest-fetch-mock` || To mock out the backend for our testing purposes. See [docs](https://github.com/jefflau/jest-fetch-mock#readme)
-- `prop-types` || To type-check our components. See [docs](https://github.com/facebook/prop-types)
-
-### 3.3 Server-side libraries
-
-- `nodemon` || To automatically restart the server when in development mode. See [docs](https://nodemon.io/)
-- `jest` || To run our tests and coverage. See [docs](https://jestjs.io/)
-- `supertest` || To more easily test our endpoints. See [docs](https://github.com/visionmedia/supertest#readme)
-- `mongodb-memory-server` || To mock out our database in our backend tests. See [docs](https://github.com/nodkz/mongodb-memory-server)
-- `cors` || To open up our API. See [docs](https://github.com/expressjs/cors#readme)
-- `mongoose` || To add schemas to our database. See [docs](https://mongoosejs.com/)
